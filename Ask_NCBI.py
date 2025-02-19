@@ -1,6 +1,6 @@
 from pprint import pprint as pp
 from requests import Session
-from secrets_api import NCBI_key #-> don't forget the key -> use mine NCBI_key = '58e0336aa7ea8fd9b3fa369f0c7ac56b9509'
+from secrets_api import NCBI_key
 import zipfile
 import os
 import re
@@ -412,5 +412,5 @@ class AskNCBI:
 #plt.show()
 
 '''The example of downloading the fasta files'''
-ask_to = AskNCBI(key = NCBI_key, path_to_download='/Users/maksimsgolubovics/Python_VScode/NCBI_zip/')
-ask_to.dowload_fasta(ask_to.find_gene_ids(symbols='IL21'))
+#ask_to = AskNCBI(key = NCBI_key, path_to_download='/Users/maksimsgolubovics/Python_VScode/NCBI_zip/')
+#ask_to.dowload_fasta(ask_to.find_gene_ids(symbols='IL21'))
